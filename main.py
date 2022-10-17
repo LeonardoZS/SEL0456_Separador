@@ -22,7 +22,7 @@ for i in range(len(dados)):
   else:
       novos_dados = novos_dados + dados[i]                      #caso seja uma string, apenas copie os valores e não mude o ',' por ';'
 
-      if dados[i] == '"' and dados[i-1] != chr(92):             #se caso encontrar um '"' e o caracter anterior não for uma "\"  = os próximos caracteres não são mais uma string
+      if dados[i] == '"' and dados[i-1] != chr(92):             #se caso encontrar um '"' e o caracter anterior não for uma "\"  = os próximos caracteres não fazem parte de uma string
         inverter = True
 
   if inverter == True and em_string == False :                  #lógica para inverter o boleano 'em_string'
